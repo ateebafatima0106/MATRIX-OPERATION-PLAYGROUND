@@ -161,44 +161,44 @@ st.subheader("AVERAGE OF THE MATRICES");
 
 if st.button("FOR MATRIX ONE"):
   avg_of_one = round(np.mean(matrix_one));
-  st.success("AVERAGE OF MATRIX ONE: ",avg_of_one);
+  st.write("AVERAGE OF MATRIX ONE: ",avg_of_one);
 if st.button("FOR MATRIX TWO"):
   avg_of_two = round(np.mean(matrix_two));
-  st.success("AVERAGE OF MATRIX TWO: ",avg_of_two);
+  st.write("AVERAGE OF MATRIX TWO: ",avg_of_two);
 
 st.subheader("SUM OF THE MATRIX");
 
 if st.button("SUM OF MATRIX ONE"):
-  st.succes(np.sum(matrix_one));
+  st.write(np.sum(matrix_one));
 if st.button("SUM OF MATRIX TWO"):
-  st.success(np.sum(matrix_two));
+  st.write(np.sum(matrix_two));
 
 st.subheader("MINIMUM NUMBER IN THE MATRIX");
 
 if st.button("IN MATRIX ONE"):
-  st.success(np.min(matrix_one));
+  st.write(np.min(matrix_one));
 if st.button("IN MATRIX TWO"):
-  st.success(np.min(matrix_two));
+  st.write(np.min(matrix_two));
 
 st.subheader("MAXIMUM NUMBER IN THE MATRIX");
 
 if st.button("IN MATRIX ONE",key="max_btn1"):
-  st.success(np.max(matrix_one));
+  st.write(np.max(matrix_one));
 if st.button("IN MATRIX TWO",key="max_btn2"):
-  st.success(np.max(matrix_two));
+  st.write(np.max(matrix_two));
 
 
 st.subheader("SUM OF ROWS");
 if st.button("IN MATRIX ONE",key="rowsum_btn1"):
-  st.success(np.sum(matrix_one,1));
+  st.write(np.sum(matrix_one,1));
 if st.button("IN MATRIX TWO",key="rowsum_btn2"):
-  st.success(np.sum(matrix_two,1));
+  st.write(np.sum(matrix_two,1));
 
 st.subheader("SUM OF COLUMNS");
 if st.button("IN MATRIX ONE",key="colsum_btn1"):
-  st.success(np.sum(matrix_one,0));
+  st.write(np.sum(matrix_one,0));
 if st.button("IN MATRIX TWO",key="colsum_btn2"):
-  st.success(np.sum(matrix_two,0));
+  st.write(np.sum(matrix_two,0));
 
 # trace: sum of diagonal elements 
 st.subheader("TRACE OF A MATRIX");
@@ -214,9 +214,9 @@ Matrix A = [[1, 2],
 
 """)
 if st.button("TRACE OF MATRIX ONE",key="m1trace_btn1"):
-  st.success(np.trace(matrix_one));
+  st.write(np.trace(matrix_one));
 if st.button("TRACE OF MATRIX TWO",key="m2trace_btn2"):
-  st.success(np.trace(matrix_two));
+  st.write(np.trace(matrix_two));
 
 st.subheader("RANK OF A MATRIX");
 
@@ -257,9 +257,9 @@ B = [[1, 2],
 """)
 
 if st.button("RANK OF MATRIX ONE",key="rank_btn1"):
-  st.success(np.linalg.matrix_rank(matrix_one));
+  st.write(np.linalg.matrix_rank(matrix_one));
 if st.button("RANK OF MATRIX TWO",key="rank_btn2"):
-  st.success(np.linalg.matrix_rank(matrix_two));
+  st.write(np.linalg.matrix_rank(matrix_two));
 
 
 st.subheader("ARE THESE DIAGONAL MATRICES");
